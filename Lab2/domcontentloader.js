@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
             displayError('email', 'Please enter a valid email.');
         }
 
-        const phonePattern = /^\d{3}-\d{2}-\d{3}$/;
+        const phonePattern = /^\+[0-9]{12}$/;
         if (!phonePattern.test(phone)) {
-            displayError('phone', 'Please enter a valid phone number (e.g., 123-45-678).');
+            displayError('phone', 'Please enter a valid phone number (e.g., +380883426950).');
         }
 
         if (!agree) {
